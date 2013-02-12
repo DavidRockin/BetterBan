@@ -1,0 +1,123 @@
+#################################################
+# BetterBans
+# v 0.1
+# (c) David Tkachuk 2013 http://davidt.com.nu
+#################################################
+
+# Chat Stuff
+# See: http://www.minecraftwiki.net/wiki/Formatting_codes
+# See: http://ess.khhq.net/mc/
+# &0 = Black		&1 = Dark Blue
+# &2 = Dark Green	&3 = Dark Aqua
+# &4 = Dark Red		&5 = Purple
+# &6 = Gold			&7 = Grey
+# &8 = Dark Grey	&9 = Blue
+# &a = Green		&b = Aqua
+# &c = Red			&d = Light Purple
+# &e = Yellow		&f = White
+# &k = Random Text	&l = Bold
+# &m = Striked		&n = Underline
+# &o = Italic		&r = Reset text
+
+#################################################
+# BetterBan Plugin Settings
+#################################################
+
+# Should we notify other players when someone gets banned?
+showBanNotifications: true
+
+# Should we notify other players when someone gets kicked?
+showKickNotifications: true
+
+# Should we notify other players when a player joined or left the server?
+showLoginQuitNotifications: true
+
+# Should we have custom login/quit messages? (Requires 'showLoginQuitNotifications' to be true)
+customLoginNotifications: true
+
+#################################################
+# Maintenance Mode
+#################################################
+
+# Should we put the server to maintenance mode?
+maintenanceEnabled: false
+
+# Should we allow people on the whitelist to join the server during maintenance mode?
+maintenanceWhitelistBypass: false
+
+# What should the maintenance message be?
+maintenanceMessage: '&cServer is currently under maintenance, please come back later.'
+
+# Message to notify the person enabling maintenance
+maintenanceEnabled: '&6You have enabled maintenance mode for the server.'
+
+# Message to notify the person disabling maintenance
+maintenanceDisabled: '&6You have disabled maintenance mode for the server.'
+
+# Maintenance MOTD Message. Keep it short, and simple!
+maintenanceMOTD: '&cServer under maintenance!'
+
+#################################################
+# Messages and Notifications
+#################################################
+# %p = Player executing action
+# %t = Target (only applied to ban and kick)
+# %r = Reason (only applied to ban and kick)
+#################################################
+
+# What should the notification be when a player gets banned?
+# (Requires 'showBanNotifications' to be true)
+banNotification: '&6Player &e%p &6has banned &e%t &6(Reason: &e%r&6)'
+
+# What should the notification be when a player gets kicked?
+# (Requires 'showKickNotifications' to be true)
+kickNotification: '&6Player &e%p &6has kicked &e%t &6(Reason: &e%r&6)'
+
+# What should the notification be when all players gets kicked?
+# This only displays to OPs, people with permission
+kickallNotification: '&6Player &e%p &6has kicked all players (Reason: &e%r&6)'
+
+# Custom join message. (Requires 'showLoginQuitNotifications' and 'customLoginNotifications' to be true)
+joinNotification: '&2[&a+&2] &a%p &ahas joined the server.'
+
+# Custom quit message. (Requires 'showLoginQuitNotifications' and 'customLoginNotifications' to be true)
+quitNotification: '&4[&c-&4] &c%p &chas left the server.'
+
+# If ban notifications are disable, this will be sent to the banner/admin
+banPlayerMessage: '&6You have banned the player &e%t'
+
+# This message will notify the unbanner that they unbanned a player
+unbanPlayerMessage: '&6You have unbanned the player &e%t'
+
+# If kick notifications are disabled, this will be sent to the kicker/admin
+playerKickedMessage: '&6You have kicked the player &e%t'
+
+# This is what a banned player will see when they attempt to login to the server when banned
+bannedMessage: 'You have been banned! Please appeal at &bdavidt.com.nu'
+
+# This is what a player will see when they're not on the whitelist. Enables IF 'whitelist' is set to true in
+# server.properties file
+whitelistMessage: 'You are not on the whitelist! Apply on the whitelist at &bdavidt.com.nu'
+
+#################################################
+# Default Reasons
+#################################################
+
+# Default ban reason, when no reason was specified (ie /ban Player)
+defaultBan: 'You have been banned!'
+
+# Defualt kick reason, when no reason was specified (ie /kick Player)
+defaultKick: 'You have been kicked!'
+
+#################################################
+# Error Messages
+#################################################
+
+# Message to notify a player they don't have permisison to use a command
+noPermissionCmd: '&4You don''t have permission to use this command.'
+
+# Message to notify a player if a person they're attempting to kick someone not online
+userNotOnline: '&cCannot kick the user &6%t &ethey are not online!'
+
+# Message to notify a player if there is no players online to kick (/kickall)
+noPlayersOnline: '&cThere are no players online to kick.'

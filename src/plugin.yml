@@ -1,0 +1,55 @@
+name: BetterBan
+main: nu.com.davidt.BetterBan.BetterBan
+
+version: 0.1
+website: http://davidt.com.nu
+description: BetterBan is a banning plugin that makes banning and server management easier!
+authors: ["David Tkachuk"]
+
+commands:
+  ban:
+    description: Bans a player
+    aliases: [bban]
+    usage: /<command> <player> [reason]
+  unban:
+    description: Unbans a player
+    aliases: [bunban]
+    usage: /<command> [player]
+  kick:
+    description: Kicks a player
+    aliases: [bkick]
+    usage: /<command> <player> [reason]
+  kickall:
+    description: Kicks everyone on the server
+    aliases: [bkickall]
+    usage: /<command> [reason]
+  maint:
+    description: Toggles maintenance mode.
+    aliases: [maintenance, mnt, bmaint]
+    usage: /<command> <state>
+
+permissions:
+  betterban.ban:
+    description: Gives access to ban command
+    default: op
+  betterban.ban.bypass:
+    description: Bypasses a player ban
+    default: op
+  betterban.unban:
+    description: Gives access to the unban command
+    default: op
+  betterban.kickall:
+    description: Gives access to the kickall command
+    default: op
+  betterban.kickall.bypass:
+    description: Prevents a player getting kicked from kickall command
+    default: op
+  betterban.maint:
+    description: Allows a player to use the maint command
+    default: op
+  betterban.maint.bypass:
+    description: Allows a player to bypass maintenance mode.
+    default: op
+  betterban.kick:
+    description: Allows a player to use the kick command
+    default: op
