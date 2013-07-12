@@ -128,22 +128,7 @@ public class PlayerListener implements Listener
     		event.setQuitMessage(message);
     	}
     }
- 
-    /*
-     * !! ATTENTION !!
-     * IF THIS BREAKS ANYTHING, SEND IN A TICKET WITH SERVER INFORMATION (BUKKIT VERSION, PLUGIN VERSION, PLUGINS, ETC)
-     * AND LET ME KNOW! THIS IS A TEMP FIX TO REMOVE MESSAGES SAYING LEFT THE GAME, WHEN THEY GET KICKED!
-     * THIS REMOVES ALL THE SPAMMY MESSAGES SAYING 'Someone has left the game' WHEN YOU /KICKALL
-     * 
-     * BE WARNED! THIS MIGHT BREAK STUFF!
-     */
-    @EventHandler
-    public void PlayerKickEvent(PlayerKickEvent event)
-    {
-    	// Remove the message
-    	event.setLeaveMessage(null);
-    }
-    
+
     // Server MOTD
     @EventHandler
     public void ServerListPingEvent(ServerListPingEvent event)

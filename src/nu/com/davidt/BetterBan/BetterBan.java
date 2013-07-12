@@ -49,10 +49,5 @@ public final class BetterBan extends JavaPlugin
 		Util.info("BetterBan unloaded!");
 		this.saveConfig();
 	}
-	
-	public static void main(String[] args)
-	{
-		/* */
-	}
 
 }
